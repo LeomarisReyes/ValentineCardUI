@@ -1,0 +1,46 @@
+﻿<Properties StartupConfiguration="{DC06F0A4-221A-423B-A1A8-46F23AB5C4D7}|Default">
+  <MonoDevelop.Ide.ItemProperties.ValentineCardUI.Android PreferredExecutionTarget="Android.lrr_-_pixel_2" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ValentineCardUI/Views/CardInfoPage.xaml">
+    <Files>
+      <File FileName="ValentineCardUI/App.xaml.cs" Line="1" Column="1" />
+      <File FileName="ValentineCardUI/Views/CardInfoPage.xaml" Line="12" Column="68" />
+      <File FileName="ValentineCardUI/Views/CardInfoPage.xaml.cs" />
+      <File FileName="ValentineCardUI.Android/MainActivity.cs" />
+      <File FileName="ValentineCardUI.iOS/Info.plist" />
+      <File FileName="ValentineCardUI/Models/Cards.cs" />
+      <File FileName="ValentineCardUI/ViewModels/CardsVIewModel.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ValentineCardUI" expanded="True" selected="True">
+            <Node name="ValentineCardUI" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="CardInfoPage.xaml" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+            </Node>
+            <Node name="ValentineCardUI.iOS" expanded="True">
+              <Node name="Resources" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ValentineCardUI.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.19246DB7-ED17-4769-94AD-22BF5FA8FA24" />
+</Properties>

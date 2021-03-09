@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.PrefersStatusBarHidden="True"
+             ios:Page.PreferredStatusBarUpdateAnimation="Fade"
+             xmlns:PanCake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="ValentineCardUI.Views.CardInfoPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto">
+                 <PanCake:PancakeView Grid.Row="0" Grid.RowSpan="3" CornerRadius="0,0,55,55" >
+                         <Image  Source="Main" Aspect="AspectFill" />
+                 </PanCake:PancakeView>
+
+                <Grid Grid.Row="0" ColumnDefinitions="*,*,*" Padding="20,40,20,0">
+                    <!-- Icon-->
+                    <Image Grid.Column="0" Source="Points" HorizontalOptions="Start" HeightRequest="20"/>
+                    <!-- Title-->
+                    <Label Grid.Column="1" Text="CardInfo" VerticalTextAlignment="Center" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    <!-- Rounded image-->
+                    <PanCake:PancakeView Grid.Column="2" HorizontalOptions="End" CornerRadius="25"  WidthRequest="50" HeightRequest="50">
+                                     <Image  Source="Model" Aspect="AspectFill"/>
+                    </PanCake:PancakeView>
+                </Grid>
+                <!-- Description-->
+                <Label Grid.Row="1" Padding="0,180,0,0" HorizontalTextAlignment="Center" FontSize="23" Text="Don't know how to express&#10; your feelings?" TextColor="White" FontAttributes="Bold"/>
+                <!-- SearchBar -->
+                <SearchBar Grid.Row="2" BackgroundColor="Transparent" Margin="30"/>
+                <!-- Carrousel Title-->
+                <Label Grid.Row="3" Padding="30,30,0,10" FontSize="25" FontAttributes="Bold" Text="Pick your perfect Card"/>
+                <!-- Carrousel Description-->
+                <Label Grid.Row="4" Padding="30,0" Text="If you're lokking for the perfect way to express how you feel about something, a simple way to say you're in love." TextColor="Silver"/>
+                <!-- Carrousel-->
+                <CollectionView Grid.Row="5"
+                    HorizontalScrollBarVisibility="Never" 
+                    Margin="0,20"
+                    ItemsSource="{Binding cards}"
+                    VerticalOptions="StartAndExpand"
+                    ItemsLayout="HorizontalList" 
+                    HeightRequest="135"> 
+                    <CollectionView.ItemTemplate>
+                       <DataTemplate>
+                           <Grid RowDefinitions="Auto" Margin="8,0"> 
+                               <Frame Grid.Row="0" HasShadow="False" CornerRadius="20" BackgroundColor="#e7ebf1" WidthRequest="95" HorizontalOptions="Start">
+                                      <Image Grid.Row="0" HorizontalOptions="Center" Source="{Binding Picture}" WidthRequest="150"/>
+                               </Frame>
+                           </Grid>
+                       </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+                <!-- Bottom buttons-->
+                <Grid Grid.Row="6" ColumnDefinitions="*,*" Padding="{OnPlatform Android='0,0,0,20'}">
+                    <Button Grid.Column="0" Text="Pick a Text" TextColor="White" FontAttributes="Bold" BackgroundColor="#ff5061" Margin="20,0" HeightRequest="60" CornerRadius="30" />
+                    <Button Grid.Column="1" Text="Write your Own" TextColor="Black" BorderColor="#ff5061" BackgroundColor="Transparent"  BorderWidth="3" FontAttributes="Bold" Margin="20,0" HeightRequest="60" CornerRadius="30" />
+                </Grid>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

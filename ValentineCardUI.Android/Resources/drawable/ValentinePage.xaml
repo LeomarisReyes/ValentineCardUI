@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ValentineCardUI.Views.ValentinePage">
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto">
+            <Grid Grid.Row="0" ColumnDefinitions="*,*,*" Padding="0,30,0,0">
+                <Label Text="CardInfo" TextColor="Red" HorizontalOptions="Center"/>
+            </Grid>
+            <!--<Image Grid.Row="0" Grid.RowSpan="3" Source="Main" HeightRequest="450" Aspect="AspectFill" />-->
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
