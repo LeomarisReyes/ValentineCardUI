@@ -3,7 +3,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="ValentineCardUI/Views/CardInfoPage.xaml">
     <Files>
       <File FileName="ValentineCardUI/App.xaml.cs" Line="1" Column="1" />
-      <File FileName="ValentineCardUI/Views/CardInfoPage.xaml" Line="12" Column="68" />
+      <File FileName="ValentineCardUI/Views/CardInfoPage.xaml" Line="34" Column="31" />
       <File FileName="ValentineCardUI/Views/CardInfoPage.xaml.cs" />
       <File FileName="ValentineCardUI.Android/MainActivity.cs" />
       <File FileName="ValentineCardUI.iOS/Info.plist" />
@@ -20,19 +20,12 @@
               </Node>
               <Node name="Models" expanded="True" />
               <Node name="ViewModels" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="CardInfoPage.xaml" expanded="True" />
-              </Node>
-              <Node name="App.xaml" expanded="True" />
             </Node>
             <Node name="ValentineCardUI.iOS" expanded="True">
               <Node name="Resources" expanded="True" />
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

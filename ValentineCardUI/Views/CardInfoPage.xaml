@@ -27,11 +27,11 @@
                 <Label Grid.Row="1" Padding="0,180,0,0" HorizontalTextAlignment="Center" FontSize="23" Text="Don't know how to express&#10; your feelings?" TextColor="White" FontAttributes="Bold"/>
                 <!-- SearchBar -->
                 <SearchBar Grid.Row="2" BackgroundColor="Transparent" Margin="30"/>
-                <!-- Carrousel Title-->
+                <!-- List Title-->
                 <Label Grid.Row="3" Padding="30,30,0,10" FontSize="25" FontAttributes="Bold" Text="Pick your perfect Card"/>
-                <!-- Carrousel Description-->
+                <!-- List Description-->
                 <Label Grid.Row="4" Padding="30,0" Text="If you're lokking for the perfect way to express how you feel about something, a simple way to say you're in love." TextColor="Silver"/>
-                <!-- Carrousel-->
+                <!-- Card list-->
                 <CollectionView Grid.Row="5"
                     HorizontalScrollBarVisibility="Never" 
                     Margin="0,20"
